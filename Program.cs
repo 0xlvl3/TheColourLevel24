@@ -1,12 +1,17 @@
 ﻿Console.Title = "The Colour";
 
-
+//creating new instance of Colour class in random variable
 Colour random = new Colour(25, 25, 233);
 
+//creating a new instance of Colour into our fixedColour variable then using our static property variable
 Colour fixedColour = Colour.White;
 
+
+//testing to see if our static property comes through
 Console.WriteLine($"{fixedColour.R}, {fixedColour.G}, {fixedColour.B}");
 
+
+//testing random
 Console.WriteLine($"{random.R}, {random.G}, {random.B}");
 
 
@@ -15,7 +20,7 @@ Console.WriteLine($"{random.R}, {random.G}, {random.B}");
 //Class will consist of three parts
 public class Colour
 {
-    //variables for colours
+    //variables for colours, use byte variable 0 - 255
     public byte R { get; }
     public byte G { get; }
     public byte B { get; }
